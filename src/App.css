@@ -58,7 +58,6 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
   padding: 8px;
 }
 .contact-body {
-  margin: auto;
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -66,7 +65,9 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
   height: 100%;
   justify-content: center;
   padding-top: 2em;
+  padding: 5em;
 }
+/*
 .contact-grid {
   text-align: center;
   justify-content: center;
@@ -88,6 +89,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
   width: 70%;
   margin: auto;
 }
+*/
 .contact-list i {
   font-size: 50px;
   padding-right:4rem;
@@ -126,10 +128,10 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 }
 .landing-hero-section{
     height: calc(100vh - 128px);
-    gap: 1rem;
+    grid-gap: 1rem;
 }
 .footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -152,6 +154,26 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     transform: translateY(-10px);
 }
 
+.grid-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    justify-content: center;
+}
+
+
+
+.grid-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.
+
 @media screen and (max-width: 578px){
     .banner-text h1{
         font-size: 3rem;
@@ -159,4 +181,13 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     .banner-text{
         max-width: 400px; 
     }
+    .vertical-line{
+        display: hidden;
+    }
+}
+
+@media screen and (max-width: 900px){
+.vertical-line{
+    display: none;
+}
 }
