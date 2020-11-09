@@ -15,6 +15,8 @@ class Contact extends Component{
 			                <p className="animated fadeInLeftBig" style={{width:'75%', margin:'auto', paddingTop:'2em',color:'white',fontSize:'14px'}}>Thank you for visiting my site!<br/>Let's know each other more.<br/> Contact me on the given contact numbers or drop an email for me at preritkhandalwal@gmail.com.<br/>I'll be happy to hear from you!</p>
 			          
 	            	</div>
+
+                     <div className="vertical"></div>
 	            	<div className="grid-item grid-item-2">
 	            		<div style={{paddingLeft:'3rem'}}>
                 <h2 style={{color:'white'}} className="animated fadeInRightBig">CONTACT ME</h2>

@@ -67,29 +67,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
   padding-top: 2em;
   padding: 5em;
 }
-/*
-.contact-grid {
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  height: 550px;
-  margin-bottom: 20px;
-}
-.contact-grid h2 {
-  font-family: 'Anton',sans-serif;
-  font-weight: auto;
-}
 
-.contact-body p {
-  font-family: 'Oxygen',sans-serif;
-  font-weight: bold;
-}
-.contact-grid hr {
-  border-top: 5px dotted white;
-  width: 70%;
-  margin: auto;
-}
-*/
 .contact-list i {
   font-size: 50px;
   padding-right:4rem;
@@ -148,7 +126,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
         display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    grid-gap: 15px;
 }
 .social-links a:hover{
     transform: translateY(-10px);
@@ -159,6 +137,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     justify-content: center;
+   
 }
 
 
@@ -172,7 +151,14 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 
 }
 
-.
+
+.vertical { 
+            border-left: 5px solid white; 
+            height: 70%; 
+            position:absolute; 
+            left: 50%; 
+            margin-top: 35px;
+}            
 
 @media screen and (max-width: 578px){
     .banner-text h1{
@@ -181,13 +167,11 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     .banner-text{
         max-width: 400px; 
     }
-    .vertical-line{
-        display: hidden;
-    }
+    
 }
 
-@media screen and (max-width: 900px){
-.vertical-line{
+@media screen and (max-width: 854px){
+.vertical{
     display: none;
 }
 }
