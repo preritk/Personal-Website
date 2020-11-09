@@ -10,16 +10,16 @@ function App() {
         <Header className="header-color " title="Hello There!" scroll>
             <Navigation>
                 <Link to ="/aboutme">About Me</Link>
-                <a href = "https://github.com/preritk/">Projects</a>
-                <a href="https://drive.google.com/open?id=0B8hEIdSlNRSpS0JET19TaTB2MlVtQzhnQl9zVGk3c1QxSTFF">Resume</a>
+                <a href = "https://github.com/preritk/" target="_blank" rel="noopener noreferrer">Projects</a>
+                <a href="https://drive.google.com/open?id=0B8hEIdSlNRSpS0JET19TaTB2MlVtQzhnQl9zVGk3c1QxSTFF" target="_blank" rel="noopener noreferrer">Resume</a>
                 <Link to="/contact">Contact Me</Link>
             </Navigation>
         </Header>
         <Drawer title="Know About Me!">
             <Navigation>
                 <Link to ="/aboutme">About Me</Link>
-                <a href = "https://github.com/preritk/" target='_blank'>Projects</a>
-                <a href="https://drive.google.com/open?id=0B8hEIdSlNRSpS0JET19TaTB2MlVtQzhnQl9zVGk3c1QxSTFF" target='_blank'>Resume</a>
+                <a href = "https://github.com/preritk/" target="_blank" rel="noopener noreferrer">Projects</a>
+                <a href="https://drive.google.com/open?id=0B8hEIdSlNRSpS0JET19TaTB2MlVtQzhnQl9zVGk3c1QxSTFF" target="_blank" rel="noopener noreferrer">Resume</a>
                 <Link to="/contact">Contact Me</Link>
             </Navigation>
         </Drawer>
